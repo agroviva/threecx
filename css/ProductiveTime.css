@@ -1,0 +1,55 @@
+#ProductiveTime {
+	position: fixed;
+    bottom: 0;
+    width: 400px;
+    height: 40px;
+    z-index: 999;
+    background-color: #0c5da5;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+#ProductiveTime.open {
+	height: 400px;
+}
+
+.benutzer {
+	display: flex;
+}
+
+img.benutzer_photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+font.benutzer_fullname {
+    font-size: 18px;
+    margin: auto 0;
+    color: white;
+}
+
+.progressBar {
+	width: 200px;
+    height: 24px;
+    margin: auto;
+}
+
+.progressBar, .progressBar * {
+	border-radius: 5px;
+}
+
+.benutzer .light-grey, .hover-light-grey:hover, .light-gray, .hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+}
+
+.benutzer .green, .hover-green:hover {
+    transition: all 0.3s;
+    color: #fff!important;
+    background-color: #4CAF50!important;
+}

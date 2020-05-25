@@ -1,0 +1,6 @@
+{
+    "require": {
+        "agroviva/egroupware-api": "dev-master",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
