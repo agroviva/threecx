@@ -54,8 +54,8 @@ class threecx_hooks {
         if ($location == 'sidebox_menu') {
             if (($GLOBALS['egw_info']['user']['apps']['admin'] && $location != 'admin') || ($GLOBALS['egw_info']['user']['account_id'] == '116')) {
             	$file = array(
-	            	'Anrufsliste'			=> Egw::link("/threecx/graph/calllist.php"),
-	            	'Einstellungen'			=> Egw::link("/threecx/graph/settings.php"),
+	            	'Anrufsliste'			=> Egw::link("/egroupware/threecx/graph/calllist.php"),
+	            	'Einstellungen'			=> Egw::link("/egroupware/threecx/graph/settings.php"),
             	);
 
             	display_sidebox($appname, "Administrator", $file);

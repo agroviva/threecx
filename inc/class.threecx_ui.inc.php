@@ -24,7 +24,7 @@ class threecx_ui
 	}
 
 	public function init() {
-		Enqueue::Script("/threecx/js/Settings.js");
+		Enqueue::Script("/egroupware/threecx/js/Settings.js");
 		CSP::add_style_src(array("self","https://fonts.googleapis.com/"));
 		CSP::add_style_src(array("self","https://maxcdn.icons8.com/"));
 		
