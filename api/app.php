@@ -25,7 +25,7 @@ $async = new asyncservice();
 
 if (($async->read('threecx')['threecx']['method'] != 'threecx.threecx_ui.synchron')) {
     $async->delete('threecx');
-    $async->set_timer(['min' => '*/5'], 'threecx', 'threecx.threecx_ui.synchron', null);
+    # $async->set_timer(['min' => '*/5'], 'threecx', 'threecx.threecx_ui.synchron', null);
 }
 
 App::Clean();
