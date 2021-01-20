@@ -1,5 +1,5 @@
 <?php
-Include_Once(__DIR__."/../api/app.php");
+require_once(__DIR__."/../api/app.php");
 
 use AgroEgw\Framework;
 use AgroEgw\Api\Enqueue;

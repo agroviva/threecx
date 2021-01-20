@@ -13,7 +13,7 @@ define('DEBUG_MODE', false);
 
 define('APPDIR', dirname(__DIR__));
 
-Require_Once(__DIR__.'/../vendor/autoload.php');
+Require_Once(__DIR__.'/../../agroviva/vendor/autoload.php');
 
 App::setName("threecx");
 App::Start();
