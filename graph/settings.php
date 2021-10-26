@@ -71,12 +71,12 @@ Require(__DIR__."/header.php");
 		<form>
 			<div class="form-group">
 		      <label for="inputURL">3CX URL</label>
-		      <input type="text" name="url" class="form-control" id="inputURL" value="<?=$login["url"]?>" required>
+		      <input type="text" name="url" class="form-control" id="inputURL" value="<?php echo $login["url"]?>" required>
 		    </div>
 		    <div class="form-row">
 			    <div class="form-group col-md-6">
 			      <label for="inputUsername">Benutzername</label>
-			      <input type="text" name="username" class="form-control" id="inputUsername" value="<?=$login["username"]?>" required>
+			      <input type="text" name="username" class="form-control" id="inputUsername" value="<?php echo $login["username"]?>" required>
 			    </div>
 			    <div class="form-group col-md-6">
 			      <label for="inputPassword">Passwort</label>

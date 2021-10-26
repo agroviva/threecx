@@ -26,7 +26,7 @@ use AgroEgw\Api\Timesheet;
 					      <label for="inputTypeInfo">Infolog Typ</label>
 					      <select id="inputTypeInfo" name="info_type" class="form-control">
 					        <?php foreach (Infolog::InfoTypes() as $key => $type): ?>
-					     		<option value="<?=$key?>" <?=($firstSeen ? "" : "selected")?>><?=$type?></option>
+					     		<option value="<?php echo $key?>" <?php echo ($firstSeen ? "" : "selected")?>><?php echo $type?></option>
 					     		<?php $firstSeen = true; ?>
 					        <?php endforeach ?>
 					      </select>
@@ -89,7 +89,7 @@ use AgroEgw\Api\Timesheet;
 					      <label for="inputCategory">Kategorie</label>
 					      <select id="inputCategory" name="category" class="form-control">
 					        <?php foreach (Timesheet::Categories() as $key => $Category): ?>
-					     		<option value="<?=$Category['id']?>" <?=($firstSeen ? "" : "selected")?>><?=$Category["name"]?></option>
+					     		<option value="<?php echo $Category['id']?>" <?php echo ($firstSeen ? "" : "selected")?>><?php echo $Category["name"]?></option>
 					     		<?php $firstSeen = true; ?>
 					        <?php endforeach ?>
 					      </select>
@@ -98,7 +98,7 @@ use AgroEgw\Api\Timesheet;
 					      <label for="inputStatusTS">Status</label>
 					      <select id="inputStatusTS" name="ts_status" class="form-control">
 					        <?php foreach (Timesheet::Config()->status_labels as $key => $status): ?>
-					     		<option value="<?=$key?>" <?=($firstSeen ? "" : "selected")?>><?=$status["name"]?></option>
+					     		<option value="<?php echo $key?>" <?php echo ($firstSeen ? "" : "selected")?>><?php echo $status["name"]?></option>
 					     		<?php $firstSeen = true; ?>
 					        <?php endforeach ?>
 					      </select>

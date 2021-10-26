@@ -17,7 +17,7 @@
   <script type="text/javascript" src="/egroupware/api/js/labjs/LAB.src.js?1534888800"></script>
   <script type="text/javascript" src="/egroupware/api/js/jsapi/egw.js?1534888800" id="egw_script_id" data-check-framework="" data-app-header="CAO Faktura" data-url="/egroupware" data-include='["vendor/bower-asset/jquery/dist/jquery.js?1534888800","api/js/jquery/jquery.noconflict.js?1534888800","api/js/jsapi/jsapi.js?1534888800","api/js/jsapi/egw_core.js?1534888800","api/js/jsapi/egw_debug.js?1534888800","api/js/jsapi/egw_preferences.js?1534888800","api/js/jsapi/egw_utils.js?1534888800","api/js/jsapi/egw_ready.js?1534888800","api/js/jsapi/egw_files.js?1534888800","api/js/jsapi/egw_lang.js?1534888800","api/js/jsapi/egw_links.js?1534888800","api/js/jsapi/egw_open.js?1534888800","api/js/jsapi/egw_user.js?1534888800","api/js/jsapi/egw_config.js?1534888800","api/js/jsapi/egw_images.js?1534888800","api/js/jsapi/egw_jsonq.js?1534888800","api/js/jsapi/egw_json.js?1534888800","api/js/jsapi/egw_store.js?1534888800","api/js/jsapi/egw_tooltip.js?1534888800","api/js/jsapi/egw_css.js?1534888800","vendor/bower-asset/jquery-ui/jquery-ui.js?1534888800","api/js/jquery/jquery-ui-timepicker-addon.js?1534888800","api/js/jsapi/egw_calendar.js?1534888800","api/js/jsapi/egw_data.js?1534888800","api/js/jsapi/egw_tail.js?1534888800","api/js/jsapi/egw_inheritance.js?1534888800","api/js/jsapi/egw_message.js?1534888800","api/js/jsapi/egw_notification.js?1534888800","api/js/es6-promise.min.js?1534888800","api/js/jsapi/app_base.js?1534888800"]' data-app="cao" data-framework-reload="1"></script>
 
-  <? SideBoxLoad(); ?>
+  <?php SideBoxLoad(); ?>
 
 </head>
 <body>

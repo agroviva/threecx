@@ -19,8 +19,8 @@ $account_id = $user->account_id;
 <div id="ProductiveTime" style="display: none;">
 	<div class="UserForm">
 		<div class="benutzer">
-			<img class="benutzer_photo" src="/egroupware/index.php?menuaction=addressbook.addressbook_ui.photo&contact_id=<?=$contact_id?>&etag=12" alt="" title="" style="display: inline;">
-			<font class="benutzer_fullname"><?=$fullname?></font>
+			<img class="benutzer_photo" src="/egroupware/index.php?menuaction=addressbook.addressbook_ui.photo&contact_id=<?php echo $contact_id?>&etag=12" alt="" title="" style="display: inline;">
+			<font class="benutzer_fullname"><?php echo $fullname?></font>
 			<div class="progressBar light-grey">
 			  <div class="green" style="height:24px;width:25%"></div>
 			</div>

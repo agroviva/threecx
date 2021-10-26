@@ -55,7 +55,7 @@ require __DIR__.'/modals.php';
 			</tr>
 		</thead>
 		<tbody class="calls">
-		<?
+		<?php
 		$List = ThreeCXManager::getList();
 		foreach ($List as $key => $call) {
 			$call = (object) $call;
@@ -71,11 +71,11 @@ require __DIR__.'/modals.php';
 			$marked = ThreeCXManager::isCallMarked($CallID) ? 'data-marked="true"' : '';
 			// Dump($call);
 			?>
-			<tr class="call" data-id="<?=$CallID?>" <?=$marked?>>
-				<td><?=$date?></td>
-				<td class="call_id" data-number="<?=ThreeCXManager::parseNumber($CallerID)?>" data-title="<?=ThreeCXManager::getTitle($CallerID)?>"><?=$CallerID?></td>
-				<td class="destination" data-number="<?=ThreeCXManager::parseNumber($Destination)?>" data-title="<?=ThreeCXManager::getTitle($Destination)?>"><?=$Destination?></td>
-				<td><?=ThreeCXManager::time_from_seconds($Duration)?></td>
+			<tr class="call" data-id="<?php echo $CallID?>" <?php echo $marked?>>
+				<td><?php echo $date?></td>
+				<td class="call_id" data-number="<?php echo ThreeCXManager::parseNumber($CallerID)?>" data-title="<?php echo ThreeCXManager::getTitle($CallerID)?>"><?php echo $CallerID?></td>
+				<td class="destination" data-number="<?php echo ThreeCXManager::parseNumber($Destination)?>" data-title="<?php echo ThreeCXManager::getTitle($Destination)?>"><?php echo $Destination?></td>
+				<td><?php echo ThreeCXManager::time_from_seconds($Duration)?></td>
 				<td class="td-actions text-right">
 					<button type="button" rel="tooltip" class="btn btn-info btn-simple" onclick="CreateInfolog(this)" data-toggle="modal" data-target="#CreateInfolog">Infolog</button>
 				</td>
@@ -86,13 +86,13 @@ require __DIR__.'/modals.php';
 					<button onclick="Mark(this)" type="button" rel="tooltip" class="btn" style="padding: 8px;"><i class="material-icons" style="margin-top: 0; margin-bottom: 0;">check_circle</i></button>
 				</td>
 			</tr>
-			<?
+			<?php
 		}
 		?>
 		</tbody>
 	</table>
 </div>
-<?
+<?php
 // Framework::Footer()();
 ?>
 	<!--   Core JS Files   -->
