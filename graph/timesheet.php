@@ -30,6 +30,7 @@ if ($action == "newTimesheet") {
 	$timesheet->ts_modified = strtotime($attr["startdate"]) ?: time();
 	$timesheet->ts_description = $attr["description"];
 	$timesheet->ts_status = $attr["ts_status"] ?: 0;
+	$timesheet->ts_created = time();
 
 	header('Content-Type: application/json');
 	if (Timesheet::New($timesheet)){
